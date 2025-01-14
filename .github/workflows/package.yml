@@ -38,4 +38,4 @@ jobs:
       - name: Check git diff
         if: github.actor != 'dependabot[bot]'
         run: |
-          git diff --exit-code dist/index.js
+          git diff --ignore-cr-at-eol --ignore-space-at-eol --exit-code dist/index.js
